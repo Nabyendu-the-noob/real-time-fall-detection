@@ -1,0 +1,28 @@
+# Virtual environment
+fenv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+tempCodeRunnerFile.py
+
+# IDE
+.vscode/
+.idea/
+
+# Videos
+*.mp4
+
+# Runtime
+fall_events.csv
+fall_logs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Packaging
+*.egg-info/
+build/
+dist/
