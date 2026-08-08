@@ -18,7 +18,7 @@ Built as a Diploma Final Year Project at **Ghani Khan Choudhury Institute of Eng
 by Nabyendu Adhikary, Sagar Halder, and Prasenjit Mandal, under the guidance of Dr. Ajit Kumar Singh Yadav.
 
 <p align="center">
-  <img src="assets/demo_strip.png" alt="Fall detection demo — normal, falling, and fallen states" width="100%">
+  <img src="C:\Users\nabye\OneDrive\Desktop\Fall\assets\demo_strip.png" alt="Fall detection demo — normal, falling, and fallen states" width="100%">
 </p>
 
 ---
@@ -48,28 +48,10 @@ by Nabyendu Adhikary, Sagar Halder, and Prasenjit Mandal, under the guidance of 
 
 ## 🏗️ Architecture
 
-```mermaid
-flowchart TD
-    A[Input Video / Webcam] --> B[Detection Layer]
-    subgraph B[Detection Layer]
-        B1[YOLOv8n Person Detection] --> B2[ByteTrack + State Storage]
-    end
-    B --> C[Pose Analysis Layer]
-    subgraph C[Pose Analysis Layer]
-        C1[MediaPipe Pose Estimation] --> C2[Biomechanical Feature Extraction]
-    end
-    C --> D[Decision Layer]
-    subgraph D[Decision Layer]
-        D1[14-Signal Weighted Fall Scoring] --> D2[Temporal State Machine]
-    end
-    D -->|Fall Confirmed| E1[Alarm + CSV Logger]
-    D -->|Candidate| E2[Continue Monitoring]
-    E1 --> F[Dashboard + Annotated Output]
-    E2 --> F
-```
+
 
 <p align="center">
-  <img src="assets\pipeline_architecture.png" alt="End-to-end system pipeline diagram" width="380">
+  <img src="C:\Users\nabye\OneDrive\Desktop\Fall\assets\pipeline_architecture.png" alt="End-to-end system pipeline diagram" width="380">
 </p>
 
 | Stage | Module | Responsibility |
