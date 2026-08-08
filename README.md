@@ -18,7 +18,7 @@ Built as a Diploma Final Year Project at **Ghani Khan Choudhury Institute of Eng
 by Nabyendu Adhikary, Sagar Halder, and Prasenjit Mandal, under the guidance of Dr. Ajit Kumar Singh Yadav.
 
 <p align="center">
-  <img src="C:\Users\nabye\OneDrive\Desktop\Fall\assets\demo_strip.png" alt="Fall detection demo — normal, falling, and fallen states" width="100%">
+  <img src="assets/demo_strip.png" alt="Fall detection demo — normal, falling, and fallen states" width="100%">
 </p>
 
 ---
@@ -51,7 +51,7 @@ by Nabyendu Adhikary, Sagar Halder, and Prasenjit Mandal, under the guidance of 
 
 
 <p align="center">
-  <img src="C:\Users\nabye\OneDrive\Desktop\Fall\assets\pipeline_architecture.png" alt="End-to-end system pipeline diagram" width="380">
+  <img src="assets/pipeline_architecture.png" alt="End-to-end system pipeline diagram" width="380">
 </p>
 
 | Stage | Module | Responsibility |
