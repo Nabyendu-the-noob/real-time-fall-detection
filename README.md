@@ -92,7 +92,7 @@ Living (ADL) clips, decision made at the event/CSV-log level.
 
 The system prioritizes sensitivity over precision by design — in a safety-critical setting, a missed
 fall is far more costly than a false alarm. Most false positives came from ADL activities that share
-geometry with falls (sitting on the floor, crawling, lying on a low bed) — see [`docs/project_report.pdf`](docs/project_report.pdf)
+geometry with falls (sitting on the floor, crawling, lying on a low bed) — see [`docs/report.pdf`](docs/report.pdf)
 §4.4 for a full discussion.
 
 ---
@@ -187,7 +187,7 @@ Planned next steps:
 ## 📄 Report & Citation
 
 The full methodology, related-work review, and evaluation are documented in
-[`docs/project_report.pdf`](docs/project_report.pdf).
+[`docs/report.pdf`](docs/report.pdf).
 
 ```
 Adhikary, N., Halder, S., Mandal, P. (2026).
