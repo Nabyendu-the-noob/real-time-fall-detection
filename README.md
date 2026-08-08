@@ -69,7 +69,7 @@ flowchart TD
 ```
 
 <p align="center">
-  <img src="assets/pipeline_architecture.png" alt="End-to-end system pipeline diagram" width="380">
+  <img src="assets\pipeline_architecture.png" alt="End-to-end system pipeline diagram" width="380">
 </p>
 
 | Stage | Module | Responsibility |
@@ -146,8 +146,8 @@ fall-detection-system/
 ### 1. Clone and set up an environment
 
 ```bash
-git clone https://github.com/<your-username>/fall-detection-system.git
-cd fall-detection-system
+git clone https://github.com/Nabyendu-the-noob/real-time-fall-detection.git
+cd real-time-fall-detection
 
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
@@ -165,7 +165,7 @@ them fresh:
 python -c "from ultralytics import YOLO; YOLO('yolov8n.pt')"
 
 # MediaPipe Pose Landmarker (Lite/Full/Heavy variants available)
-# https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker
+https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker
 ```
 
 ### 3. Run
@@ -180,15 +180,6 @@ python main.py --source 0
 # Headless (server / no display), custom output path
 python main.py --source video.mp4 --no-display --output result.mp4
 ```
-
-| Flag | Default | Description |
-|---|---|---|
-| `--source` | `fall01.mp4` | Video path or webcam index |
-| `--output` | `output_fall_detected_weighted.mp4` | Annotated output video path |
-| `--no-display` | off | Disable the OpenCV live preview window |
-| `--yolo-model` | `yolov8n.pt` | Path to YOLO weights |
-| `--pose-model` | `pose_landmarker.task` | Path to MediaPipe pose model |
-| `--display-every` | `5` | Show preview every N frames |
 
 Press **`q`** in the preview window to stop early. Output video, `fall_events.csv`, and
 `fall_logs/*.png` screenshots are written alongside the script.
@@ -208,7 +199,6 @@ Planned next steps:
 - [ ] RTSP stream support for existing CCTV integration
 - [ ] Multi-camera fusion to remove blind spots
 - [ ] Learned (data-driven) severity model to replace the rule-based scorer
-- [ ] Web dashboard for reviewing fall history/trends
 
 ---
 
